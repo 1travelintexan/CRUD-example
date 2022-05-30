@@ -1,0 +1,10 @@
+Movie
+<div style="border: 1px solid black; width: 300px; margin: 20px">
+  <h4><%= movie.title %></h4>
+  <h5><%= movie.director %></h5>
+  <h6><%= movie.description %></h6>
+  <a href="/movies/<%= movie.id %>/edit">Edit movie</a>
+  <form action="/movies/<%= movie.id %>/delete" method="POST">
+    <button type="submit">Delete</button>
+  </form>
+</div>

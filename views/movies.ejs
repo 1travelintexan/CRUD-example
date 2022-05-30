@@ -1,0 +1,9 @@
+Movies <% movies.forEach(({ title, director, description, id }) => { %>
+<div style="border: 1px solid black; width: 300px; margin: 20px">
+  <h4><%= title %></h4>
+  <h5><%= director %></h5>
+  <a href="/movies/<%= id %>">Movie details</a>
+</div>
+<% }) %>
+
+<a href="/movies/create">Add new movie</a>

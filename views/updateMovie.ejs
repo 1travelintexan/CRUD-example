@@ -1,0 +1,20 @@
+<h2>Create a Movie</h2>
+
+<form action="/movies/<%= movie.id %>/edit" method="POST">
+  <label>
+    Title:
+    <input type="text" name="title" value="<%= movie.title %>" />
+  </label>
+
+  <label>
+    Director:
+    <input type="text" name="director" value="<%= movie.director %>" />
+  </label>
+
+  <label>
+    Description:
+    <textarea name="description" cols="30" rows="4"><%= movie.description %></textarea>
+  </label>
+
+  <button type="submit">Update</button>
+</form>
